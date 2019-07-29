@@ -87,7 +87,7 @@ class App extends Component {
 //Fetch request to either create a new user or find an existing user
 //with the confirmed Google info
   getUser = (config) => {
-    let url = "http://localhost:3000/users"
+    let url = "https://price-is-right.herokuapp.com/users"
     fetch(url, config)
     .then(response => response.json())
     .then(data => {
@@ -121,7 +121,7 @@ class App extends Component {
   }
 
   getScores = () => {
-    let url = "http://localhost:3000/games"
+    let url = "https://price-is-right.herokuapp.com/games"
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -149,7 +149,7 @@ class App extends Component {
 
 //get all products
   getProducts = () =>{
-    let url = "http://localhost:3000/products"
+    let url = "https://price-is-right.herokuapp.com/products"
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -284,7 +284,7 @@ class App extends Component {
   saveMoney = (money, event, cb) => {
     event.preventDefault()
     let { gameId } = this.state
-    let url = "http://localhost:3000/games/" + gameId
+    let url = "https://price-is-right.herokuapp.com/games/" + gameId
 
     cb && cb()
 
@@ -335,7 +335,7 @@ class App extends Component {
 
   newGame = () => {
     let { userId } = this.state
-    let url = "http://localhost:3000/games"
+    let url = "https://price-is-right.herokuapp.com/games"
     let config = {
       headers:{
         'Content-Type': 'application/json'
@@ -359,7 +359,7 @@ class App extends Component {
     }
 
   saveProducts = (game) => {
-    let url = "http://localhost:3000/game_products"
+    let url = "https://price-is-right.herokuapp.com/game_products"
     let { productsPunchId, eProductId } = this.state
 
     productsPunchId.push(eProductId)
