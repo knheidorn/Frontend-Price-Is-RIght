@@ -10,7 +10,6 @@ import Home from './components/Home'
 import LeaderBoard from './components/LeaderBoard'
 import Stats from './components/Stats'
 import Loading from './components/Loading'
-import EndGame from './components/EndGame'
 
 import StartGame from './containers/StartGame'
 import PunchABunch from './containers/PunchABunch'
