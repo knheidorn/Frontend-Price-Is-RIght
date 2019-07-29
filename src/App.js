@@ -491,7 +491,7 @@ class App extends Component {
             </div>
             <div>
               <GoogleLogin
-                clientId="306712866153-k37qt6nhspd4v53gg1l7o73vp8hc1kfs.apps.googleusercontent.com"
+                clientId="925862615078-3m3e3da1g5umrfhia7g9djdcidp4rr0a.apps.googleusercontent.com"
                 buttonText="Login"
                 onSuccess={this.verifyGoogle}
                 onFailure={this.verifyGoogle}
